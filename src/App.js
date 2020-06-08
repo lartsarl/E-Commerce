@@ -1,6 +1,10 @@
 import React from 'react';
 import { auth, CreateUserProfileDocument } from './firebase/firebase.utils'
+<<<<<<< HEAD
 import { Switch, Route, Redirect } from 'react-router-dom';
+=======
+import { Switch, Route } from 'react-router-dom'
+>>>>>>> refs/remotes/origin/master
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
@@ -60,12 +64,19 @@ class App extends React.Component {
   }
 }
 
+<<<<<<< HEAD
 const mapStateToProps = ({user}) => ({
   currentUser: user.currentUser
 })
 
+=======
+>>>>>>> refs/remotes/origin/master
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 })
 
+<<<<<<< HEAD
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+=======
+export default connect(null, mapDispatchToProps)(App);
+>>>>>>> refs/remotes/origin/master
